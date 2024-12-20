@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.homepage{
+    min-height: 100vh;
+    width: 100%;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    background-color: rgb(255, 36, 16);
+}
+
+.navlinks{
+    
+    padding-left: -4%;
+    
+}
+.navlinks ul li{
+    margin-top: 6%;
+    list-style: none;
+    display:inline-block;
+    
+}
+.navlinks ul li a{
+    margin-right: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.navlinks ul li a:hover{
+    text-decoration: underline;
+    color: gainsboro;
+}
+
+
+#mainh1{
+    margin-top: 5%;
+text-align: center;
+font-size: 60px;
+color: rgb(96, 96, 96);
+}
+
+#phome{
+    margin-top: 3%;
+    text-align: center;
+}
+
+
+#pencilanimate{
+    animation-name: pencilanimate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#pencilanimate:hover{
+    animation-play-state: paused;
+}
+
+@keyframes pencilanimate{
+    0%{
+        transform: rotate(180deg)
+    }
+
+    50%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(-180deg);
+    }
+}
+
+.centerhomebutton{
+    display: flex;
+    justify-content: center;
+}
+#homebutton{
+    text-align: center;
+    margin-top: 12%;
+    border: 1px solid rgb(255, 36, 16);
+    padding: 15px;
+    border-radius: 45px;
+    background-color: rgb(251, 42, 0);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+
+}
+#homebutton:hover{
+    color: rgb(107, 107, 107);
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+/******FAQs.CSS***/
+
+
+.faqmaincontent{
+width:1350px;
+margin: auto;
+box-shadow: 10px 12px 15px rgba(0,0,0,0.1);
+margin-top: 5%;
+border-radius: 5px;
+}
+.faqh2{
+margin-top: 5%;
+color: rgb(255, 36, 16);
+}
+.faqp{
+    margin-top: 5%;
+    color: gray;
+}
+
+footer {
+    background-color: rgb(255, 36, 16);
+    border-radius: 15px;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 250px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .footer-section p, .footer-section ul {
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 8px 0;
+  }
+  
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    color: #3498db;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-section {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+
+
+    .faqmaincontent{
+      width: 450px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /******YourTodo*****/
+
+  .todomain{
+    margin-top: 5%;
+    
+  }
+
+  #todobutton{
+
+    border: 1px solid rgb(255, 36, 16); 
+    padding: 15px; 
+    border-radius: 45px;
+    background-color: rgb(251, 42, 0);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .input-box{
+    display: flex;
+    align-items: cnter;
+    justify-content: space-between;
+    background: rgb(230, 230, 230);
+    border-radius: 40px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 15px;
+  }
+
+  .todomain{
+    width: 800px;
+    margin: auto;
+  }
+  .inserttodo{
+    
+    border-bottom: 25px;
+  
+  }
+
+  #todocontainerlist li{
+   list-style: none;
+   font-size: 15px;
+   padding: 12px 12px 12px 48px;
+   cursor: pointer;
+  }
+
+  .todolist{
+    margin-top: 15%;
+    margin-bottom: 15%;
+    border-radius: 25px;
+    box-shadow: 12px 15px 10px rgba(0,0,0,0.1);
+  }
+
+
+
+  
+@media (max-width:768px){
+  .input-box{display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.todomain{
+  margin-top: 5%;
+  margin-left: 3%;
+
+
+}
+.input-box{
+  width: 400px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*****About.html*****/
+
+
+  .aboutimg{
+    border: 3px solid orangered;
+    width:300px;
+    height: 300px;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+  }
+  .aboutcard{
+    width: 1000px;
+    margin: auto;
+    margin-top: 5%;
+  }
+
+  .abouttext{
+    color: rgb(54, 54, 54);
+    font-size: 16px;
+  }
+
+  .aboutcenterbuttondiv{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutcenterbutton{
+    text-decoration: none;
+    color: orangered;
+    border: 1px solid orangered;
+    padding: 8px;
+  }
+  
+
+  #todobutton{
+    width: 90px
+  }
+
+
+
+@media (max-width:768px){
+  .aboutcard{
+    width: 450px;
+  }
+  .aboutimg{
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  /*******Contactus.html********/
+
+  /* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #2c3e50;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* Main Content */
+main {
+  padding: 40px 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.contact-details p {
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button.submit-btn {
+  background-color: #ff4400;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+  background-color: #2ecc71;
+}
+
+
+
+
+
+
+/******Toggle Menu*****/
+
+
+
+
+.menu-container {
+  position: relative;
+}
+
+/* Toggle Button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.bar {
+  background-color: #333;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.menu a:hover {
+  background-color: #575757;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navlinks {
+      display: none;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 60px; /* Adjust based on your header height */
+      left: 0;
+      z-index: 1000;
+      flex-direction: column;
+  }
+
+  .navlinks ul {
+      flex-direction: column;
+  }
+
+  .navlinks li {
+      margin: 10px 0;
+      text-align: center;
+  }
+
+  .menu-toggle {
+      display: flex;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1001;
+  }
+}
+
+.navlinks.active {
+  display: block;
+}
